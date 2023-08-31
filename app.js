@@ -1,4 +1,4 @@
-const apiKey = "a17a4be13b31afa5b8260aee24a3d170";
+const apiKey = "secret api key";
 const apiUrl =
   "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
 
@@ -36,12 +36,10 @@ async function checkWeather(city) {
     }
 
     document.querySelector(".weather").style.display = "block";
-    document.querySelector('.error').style.display = "none";
+    document.querySelector(".error").style.display = "none";
   }
 }
 
 searchButton.addEventListener("click", () => {
   checkWeather(searchBox.value);
 });
-
-
